@@ -48,6 +48,7 @@ nav a {
   padding-inline: 100px;
   padding-block: 100px;
   position: relative;
+  width: 100%;
 }
 
 .picture.left::before {
@@ -72,6 +73,7 @@ nav a {
 }
 #about-me {
   flex: 2;
+  width: 100%;
 }
 .about-me__title {
   margin-top: 1em;
