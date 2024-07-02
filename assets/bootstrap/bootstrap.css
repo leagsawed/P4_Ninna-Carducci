@@ -6461,6 +6461,12 @@ fieldset:disabled .btn {
   margin-bottom: 1rem;
   margin-left: 15%;
   list-style: none;
+  width: 70%;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
 }
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
