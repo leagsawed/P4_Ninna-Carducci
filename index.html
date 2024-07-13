@@ -30,13 +30,31 @@
     <noscript
       ><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"
     /></noscript>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="preload"
+      href="./assets/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="./assets/style.css" />
+    </noscript>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      />
+    </noscript>
+
     <script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
       defer
