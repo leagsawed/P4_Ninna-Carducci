@@ -33,6 +33,7 @@ html {
 #carouselExampleIndicators {
   width: 100%;
   height: 100%;
+  max-width: 99vw;
 }
 
 nav ul {
@@ -58,10 +59,12 @@ nav a {
 #about {
   display: flex;
   background-color: #f6d2b8;
-  padding-inline: 100px;
-  padding-block: 100px;
+  /* padding-inline: 100px; */
+  /* padding-block: 100px; */
+  padding: 5%;
   position: relative;
   width: 100%;
+  max-width: 99vw;
 }
 
 .picture.left::before {
