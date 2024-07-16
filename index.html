@@ -65,8 +65,10 @@
     <script defer src="./assets/scripts.js"></script>
   </head>
   <body>
-    <div class="top-header">
-      <h1 class="name">Nina Carducci</h1>
+    <div class="top-header" itemscope itemtype="http://schema.org/Person">
+      <h1 class="name" itemprop="name">Nina Carducci</h1>
+      <meta itemprop="jobTitle" content="Photographe professionnelle" />
+
       <nav>
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -123,6 +125,7 @@
               src="./assets/images/slider/ryoji-iwata.webp"
               class="d-block w-100"
               alt="Ryoji Iwata"
+              itemprop="image"
             />
           </div>
           <div class="carousel-item">
@@ -131,6 +134,7 @@
               class="d-block w-100"
               alt="Nicholas Green"
               loading="lazy"
+              itemprop="image"
             />
           </div>
           <div class="carousel-item">
@@ -139,6 +143,7 @@
               class="d-block w-100"
               alt="Edward Cisneros"
               loading="lazy"
+              itemprop="image"
             />
           </div>
         </div>
@@ -165,11 +170,15 @@
     <main>
       <div id="about">
         <div class="picture left">
-          <img src="./assets/images/nina.webp" alt="Portrait de Nina" />
+          <img
+            src="./assets/images/nina.webp"
+            alt="Portrait de Nina"
+            itemprop="image"
+          />
         </div>
         <article id="about-me">
           <h2 class="about-me__title">A propos de moi</h2>
-          <p class="about-me__introduction">
+          <p class="about-me__introduction" itemprop="description">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
             prédestinée. Saisir un moment, une émotion, une situation, un
             endroit, une lumière et les rendre immortels, voilà ce qui me fait
@@ -197,54 +206,63 @@
               class="gallery-item"
               src="./assets/images/gallery/concerts/aaron-paul.webp"
               alt="Photographie de Aaron Paul en concert"
+              itemprop="image"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/ali-morshedlou.webp"
               alt="Photographie de Ali Morshedlou dans un contexte d'entreprise"
+              itemprop="image"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/jason-goodman.webp"
               alt="Photographie de Jason Goodman dans un contexte d'entreprise"
+              itemprop="image"
             />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
               src="./assets/images/gallery/mariage/hannah-busing.webp"
               alt="Photographie de Hannah Busing lors d'un mariage"
+              itemprop="image"
             />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
               src="./assets/images/gallery/portraits/ade-tunji.webp"
               alt="Portrait de Ade Tunji"
+              itemprop="image"
             />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
               src="./assets/images/gallery/mariage/jakob-owens.webp"
               alt="Photographie de Jakob Owens lors d'un mariage"
+              itemprop="image"
             />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
               src="./assets/images/gallery/portraits/nino-van-prattenburg.webp"
               alt="Portrait de Nino Van Prattenburg"
+              itemprop="image"
             />
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
               src="./assets/images/gallery/concerts/austin-neill.webp"
               alt="Photographie de Austin Neill en concert"
+              itemprop="image"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/mateus-campos.webp"
               alt="Photographie de Mateus Campos dans un contexte d'entreprise"
+              itemprop="image"
             />
           </div>
         </div>
@@ -343,6 +361,32 @@
               ></textarea>
               <input type="submit" value="Envoyer" />
             </form>
+            <div id="informations">
+              <div
+                itemprop="address"
+                itemscope
+                itemtype="http://schema.org/PostalAddress"
+              >
+                <p>
+                  Adresse:
+                  <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span
+                  >,
+                  <span itemprop="postalCode">33200</span>
+                  <span itemprop="addressLocality">Bordeaux</span>
+                </p>
+              </div>
+              <div>
+                <p>Tel: <span itemprop="telephone">05 56 67 78 89</span></p>
+              </div>
+              <div>
+                <p>
+                  Horaires:
+                  <span itemprop="openingHours" datetime="Mo-Fr 10:00-19:00">
+                    Lundi à Vendredi de 10 h à 19 h
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
           <div class="picture right">
             <img
@@ -350,6 +394,7 @@
               alt="Appareil photo"
               width="400"
               height="400"
+              itemprop="image"
             />
           </div>
         </div>

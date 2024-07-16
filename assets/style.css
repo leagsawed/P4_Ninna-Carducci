@@ -31,6 +31,15 @@ html {
   max-width: 99vw;
 }
 
+#informations {
+  font-weight: bold;
+}
+
+#informations p {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
 nav ul {
   display: flex;
   list-style-type: none;
